@@ -3,15 +3,19 @@ public class Box {
     double width;
     double height;
 
-    double getVolume(){ //метод нга возвращение
-
-        return length*width*height;
-//       double volume = length*width*height;
-//       return volume;
+    void setDimens(double length, double width, double height) { //метод устанавливающий значения
+        this.length = length;
+        this.width = width;
+        this.height = height;
     }
-    double showVolume(){ //метод на вывод в консоль
-        double volume = length*width*height;
-        System.out.println(volume);
-        return volume;
+
+    double getVolume() { //метод на возвращение
+        return length * width * height;
+    }
+
+    void showVolume() { //метод на вывод в консоль
+        System.out.println(getVolume());
+
     }
 }
+
