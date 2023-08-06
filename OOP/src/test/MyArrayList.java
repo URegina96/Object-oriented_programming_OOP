@@ -5,7 +5,7 @@ public class MyArrayList { //коллекция
     private int size = 0;
 
 
-    public String get(int index){
+    public String get(int index) {
         return array[index];
     }
 
