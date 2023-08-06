@@ -1,14 +1,12 @@
 package test;
 
+import examples.MyMath;
 import examples.Person;
 
 public class Main {
     public static void main(String[] args) {
-        Person person =new Person("Hahe", 6754);
-        person.setAge(-6453);
-        System.out.println("Name: "+person.getName()+", age: "+person.getAge());
-
-        //Box box = new Box(5); - будет ошибка
-
+        System.out.println(MyMath.length(13456340));
+        System.out.println(MyMath.area(435));
+        System.out.println(MyMath.sum(1,32,443,6436,6578,435,3,1234));
     }
 }
