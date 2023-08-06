@@ -1,12 +1,24 @@
 package test;
-
-import examples.MyMath;
-import examples.Person;
-
 public class Main {
+    private static MyArrayList emloyees;
+
     public static void main(String[] args) {
-        System.out.println(MyMath.length(13456340));
-        System.out.println(MyMath.area(435));
-        System.out.println(MyMath.sum(1,32,443,6436,6578,435,3,1234));
+        MyArrayList employees = getEmployees();
+        employees.add("Hthfs");
+        employees.remove("Cgdr");
+        for (int i = 0; i < employees.getSize(); i++) {
+            System.out.println(employees.get(i));
+        }
     }
+
+    private static MyArrayList getEmployees() {
+        MyArrayList employees = new MyArrayList();
+        employees.add("Agdr");
+        employees.add("Brawr");
+        employees.add("Cgdr");
+        employees.add("Dgwe4ra");
+        employees.add("Gr");
+        return employees;
+    }
+
 }
